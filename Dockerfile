@@ -1,9 +1,6 @@
 # Use the official Nginx Alpine image as the base image
 FROM nginx:alpine
 
-# Remove the default Nginx configuration
-RUN rm -v /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
-
 # Copy your HTML file into the container
 COPY index.html /usr/share/nginx/html
 
